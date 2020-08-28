@@ -1,0 +1,28 @@
+HTML elements:
+    - search bar
+    - book result
+        - title
+        - author
+        - cover
+        - rating
+    - movie result
+        - title 
+        - director (or writer...?)
+        - poster
+        - rating
+    - comparison score/rating/?
+Javascript
+    - search bar
+        - get input
+        - functions
+            - pass to book API
+            - pass to movie API
+            - how to deal with inconsistencies
+                - autocomplete/debounce?
+    - book result
+        - populate/update fields
+    - movie result
+        - populate/update fields
+    - comparison
+        - calculate
+        - populate/update fields
