@@ -1,3 +1,15 @@
+*********
+WHEN I search for a book
+THEN I get info for the book and see a movie with the same title (that is most likely based on it)
+*********
+
+
+HTML
+    - search bar
+    - book result
+        - info
+    - movie 
+
 HTML elements:
     - search bar
     - book result
