@@ -36,3 +36,8 @@ Javascript
     - comparison
         - calculate
         - populate/update fields
+    - recommendations
+        - book
+            - https://tastedive.com/api/similar?k=(apikey)&limit=(numberofresults)&q=book:(booktitle)
+        - movie
+            - https://tastedive.com/api/similar?k=(apikey)&limit=()numberofresults)&q=movie:(movietitle)
