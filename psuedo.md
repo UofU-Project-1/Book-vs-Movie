@@ -5,6 +5,8 @@ HTML elements:
         - author
         - cover
         - rating
+        - wrong movie
+            - brings up modal that holds 
     - movie result
         - title 
         - director (or writer...?)
@@ -16,7 +18,15 @@ Javascript
         - get input
         - functions
             - pass to book API
+                - https://www.goodreads.com/search/index.xml?key=(api key)&q=(search string)
+                - put somewhere to hold/display results
+                - when correct result is selected, return rating of that result
             - pass to movie API
+                - http://www.omdbapi.com/?apikey=(api key)&s=(search string)
+                - put somewhere to hold/display results
+                - get imdbID of correct result, send through
+                    - http://www.omdbapi.com/?apikey=(api key)&i=(imdbID)
+                    - get info
             - how to deal with inconsistencies
                 - autocomplete/debounce?
     - book result
@@ -26,3 +36,8 @@ Javascript
     - comparison
         - calculate
         - populate/update fields
+    - recommendations
+        - book
+            - https://tastedive.com/api/similar?k=(apikey)&limit=(numberofresults)&q=book:(booktitle)
+        - movie
+            - https://tastedive.com/api/similar?k=(apikey)&limit=()numberofresults)&q=movie:(movietitle)
