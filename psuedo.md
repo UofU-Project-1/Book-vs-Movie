@@ -1,3 +1,14 @@
+HTML
+    - search bar
+    - book result
+        - info
+    - movie from book
+
+*********
+WHEN I search for a book
+THEN I get info for the book and see a movie that is most likely based on it
+*********
+
 HTML elements:
     - search bar
     - book result
