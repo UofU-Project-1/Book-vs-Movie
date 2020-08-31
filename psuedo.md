@@ -6,7 +6,7 @@
 - [user story](#user-story)
 - [html](#html)
 - [issues](#issues)
-- [resources](#resources-apis)
+- [resources - APIs](#resources-apis)
 - [extra functionality](#extra-functionality)
 
 ## Project Requirements
