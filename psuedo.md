@@ -7,6 +7,7 @@
 - [html](#html)
 - [issues](#issues)
 - [resources](#resources-apis)
+- [extra functionality](#extra-functionality)
 
 ## Project Requirements
 ### Application
