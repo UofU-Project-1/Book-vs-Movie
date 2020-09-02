@@ -12,20 +12,11 @@
 ## Project Requirements
 ### Application
 - [x] must use at least two server-side APIs
-<<<<<<< HEAD
     - [x] use at least one new third-party API (GoodReads, omdb)
 - [x] must use a CSS framework other than Bootstrap (bulma)
 - [x] must be interactive (accept and respond to user input)
 - [ ] must have a polished UI
 - [ ] must meet good quality coding standards
-=======
-    - [x] use at least one new third-party API
-        -GoodReads, omdb
-- [ ] must use a CSS framework other than Bootstrap
-- [ ] must be interactive (accept and respond to user input)
-- [ ] must have a polished UI
-- [ ] must meed goo quality coding standards
->>>>>>> master
 - [ ] does not use alerts, confirms or prompts (look into modals)
 - [ ] must be deployed to github pages
 ### Presentation
@@ -37,16 +28,13 @@
 - [ ] links to the deployed application and the github repository
 
 ## User story
-**WHEN** I search for a book,
-**THEN** I get info for the book and see a movie with the same title (that is most likely based on it)
+**WHEN** I search for a MOVIE TITLE,
+**THEN** I get info for the MOVIE and see a BOOK with the same TITLE (that is most likely the source material)
 
 ## HTML
 - header
 - search bar
-    - option 1: book priority
-        - info
-        - related movie
-    - option 2: movie priority
+    - movie
         - info
         - related book
 - footer
@@ -56,17 +44,17 @@
 - make search bar
 - make div to display search result info
     - title
-    - author/screenwriter
-    - cover/poster
+    - screenwriter
+    - poster
     - rating
 - make div to hold related movie/book
     - title
-    - screenwriter/author
-    - poster/cover
+    - author
+    - cover
     - rating
 - make modal to display for searches with no results
 **Styling**
-- CSS framework other than Bootstrap
+- CSS framework: Bulma
 **Functionality**
 - get input from search bar
 - append input to API URL, initiate AJAX call
