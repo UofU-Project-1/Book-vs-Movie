@@ -1,1 +1,105 @@
 /* CSS Stylesheet */
+
+
+
+/* :root {
+    --primary-color-h: 156;
+    --primary-color-s: 50%;
+    --primary-color-l: 50%;
+    --primary-color: hsl(var(--primary-color-h), var(--primary-color-s), var(--primary-color-l));
+    --primary-color--light: hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) + var(--lighten)));
+    --primary-color--dark: hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) + var(--darken)));
+    --secondary-color: hsl(calc(var(--primary-color-h) + 180), var(--primary-color-s), var( --primary-color-l));
+    --lighten: 15%;
+    --darken: -15%;
+  } */
+
+ #body{
+    --hue: var(--hue-neutral);
+    background-color: hsl(var(--hue), 100%, 25%);
+    padding: 0px 0px 0px 0px; 
+    margin: px;
+   
+ }
+
+  :root {
+    --hue-neutral:260;
+    
+}
+
+.section{
+    padding: 0px
+}
+
+#header {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+    color: yellow;
+    justify-content:center;
+    align-items: center;
+
+    
+}
+
+p {
+    color: black;
+}
+
+.title:not {
+    color: yellow;
+}
+
+h1.title, .subtitle {
+    color: yellow;
+}
+.subtitle strong {
+    color: yellow;
+}
+
+
+/* Search Input */
+input[type="text"]{
+ 
+    height: 40px;
+    width: auto;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    border: solid;
+    border-radius: 50px;
+    padding: 10px 10px;
+    border-color: rgb(67, 119, 121);
+  }
+
+   /* Weather Submit button */
+input[type="submit"]{
+    height: 40px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    border: solid;
+    border-radius: 50px;
+    border-color: rgb(67, 119, 121);
+  }
+
+  .container {
+    width: auto;
+    max-width: 100%;
+    background-color:cornflowerblue;
+    border-radius: 10px;
+    padding: 0px;
+    box-shadow: 0 0 10px 2px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.section.section {
+    align-items: center;
+    justify-content: center;
+    display: block;
+}

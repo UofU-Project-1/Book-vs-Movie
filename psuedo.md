@@ -12,11 +12,20 @@
 ## Project Requirements
 ### Application
 - [x] must use at least two server-side APIs
+<<<<<<< HEAD
     - [x] use at least one new third-party API (GoodReads, omdb)
 - [x] must use a CSS framework other than Bootstrap (bulma)
 - [x] must be interactive (accept and respond to user input)
 - [ ] must have a polished UI
 - [ ] must meet good quality coding standards
+=======
+    - [x] use at least one new third-party API
+        -GoodReads, omdb
+- [ ] must use a CSS framework other than Bootstrap
+- [ ] must be interactive (accept and respond to user input)
+- [ ] must have a polished UI
+- [ ] must meed goo quality coding standards
+>>>>>>> master
 - [ ] does not use alerts, confirms or prompts (look into modals)
 - [ ] must be deployed to github pages
 ### Presentation
