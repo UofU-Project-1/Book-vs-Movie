@@ -22,13 +22,13 @@
           </a>
 
 
-
+<!-- Search Bar-->
           <div class="navbar-end">
             <div class="navbar-item">
               <section id="search" class="has-text-centered">
 
-                <input type="text" class="inputValue" placeholder="Enter a book to search">
-                <input type="submit" value="Submit" class="button">
+                <input id="search-movie-title" type="text" class="inputValue" placeholder="Enter a movie to search">
+                <input id="search-btn" type="submit" value="Submit" class="button">
 
               </section>
 
@@ -37,6 +37,7 @@
         </div>
       </nav>
 
+      <!-- top banner-->
       <div class="container">
         <h1 class="title">Book vs Movie</h1>
         <h2 class="subtitle">Compare the <strong>Book</strong> versus the <strong>Movie</strong>!</h2>
@@ -50,7 +51,7 @@
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
-      background-blend-mode: exclusion
+    
     }
     </style>
 
@@ -59,15 +60,15 @@
       <div class="tile">
         <div class="tile is-parent is-vertical">
           <article class="tile is-child notification is-primary is-bold">
-            <p class="title"><u>Movie Result #1</u></p>
-            <p class="subtitle">Director</p>
-            <p class="subtitle">Copyright</p>
-            <p class="subtitle">Rating</p>
-            <div class="content">
+            <p id="book-title" class="title"><u>Book Result #1</u></p>
+            <p id="book-author" class="subtitle">Author</p>
+            <p id="book-year" class="subtitle">Published Year</p>
+            <p id="book-rating" class="subtitle">Rating</p>
+            <!-- <div id="" class="content">
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque libero, perspiciatis magni maiores
                 officiis molestias unde earum ipsum aliquam! Velit dolorum unde neque ut delectus tempora nesciunt sunt
                 dolor qui.</p>
-            </div>
+            </div> -->
 
             <!-- Movie Poster -->
             <!-- <figure class="image is-1by1">
@@ -75,42 +76,44 @@
             </figure> -->
           </article>
 
-          <article class="tile is-child notification is-danger is-bold is-light">
-            <p class="title"><u>Movie Result #2</u></p>
+          <!-- <article class="tile is-child notification is-danger is-bold is-light">
+            <p class="title"><u>Book Result #2</u></p>
             <p class="subtitle">Director</p>
             <p class="subtitle">Copyright</p>
             <p class="subtitle">Rating</p>
             <div class="content">
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores nesciunt at in illo, illum
                 praesentium tempora sequi ipsam sit corporis? Eum hic corrupti ex blanditiis libero, iusto esse expedita
-                molestiae!</p>
-            </div>
+                molestiae!</p> 
+          </div> 
 
-            <!-- Movie Poster -->
-            <!-- <figure class="image is-1by1">
-                  <img src="https://bulma.io/images/placeholders/480x480.png">
-                </figure> -->
+            
+          </article> -->
 
-          </article>
+          <!-- Movie Poster -->
+          <!-- <figure class="image is-1by1">
+            <img src="https://bulma.io/images/placeholders/480x480.png">
+          </figure> -->
+
         </div>
 
         <div class="tile is-parent">
           <article class="tile is-child notification is-link is-bold">
-            <p class="title"><u>Book result</u></p>
-            <p class="subtitle">Author</p>
-            <p class="subtitle">Copyright/Publication Date</p>
-            <p class="subtitle">Rating</p>
-            <div class="content">
+            <p id="movie-title" class="title"><u>Movie result</u></p>
+            <p id="movie-director" class="subtitle">Director</p>
+            <p id="movie-year" class="subtitle">Release Date</p>
+            <p id="movie-rating" class="subtitle">Rating</p>
+            <!-- <div class="content">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa id ab obcaecati ea, possimus vero
                 distinctio ducimus at maxime reprehenderit sequi odit laboriosam quo aperiam pariatur quia voluptatibus
                 qui quae?</p>
 
-            </div>
+            </div> -->
 
             <!-- Book Cover -->
-            <figure class="image is-1by1">
+            <!-- <figure class="image is-1by1">
               <img src="https://bulma.io/images/placeholders/480x480.png">
-            </figure>
+            </figure> -->
           </article>
         </div>
       </div>
