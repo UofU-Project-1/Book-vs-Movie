@@ -11,8 +11,9 @@
 
 ## Project Requirements
 ### Application
-- [ ] must use at least two server-side APIs
-    - [ ] use at least one new third-party API
+- [x] must use at least two server-side APIs
+    - [x] use at least one new third-party API
+        -GoodReads, omdb
 - [ ] must use a CSS framework other than Bootstrap
 - [ ] must be interactive (accept and respond to user input)
 - [ ] must have a polished UI
