@@ -1,12 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book vs Movie</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book vs Movie</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <link rel="stylesheet" href="./assets/styles-2.css">
 </head>
-<body>
-    
+
+<body id="body">
+
+  <header id="header" class="has-text-centered">
+    <section class="section">
+
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="">
+            <img src="./assets/book-vs-movie.png" width="auto" height="auto">
+          </a>
+
+
+
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <section id="search" class="has-text-centered">
+
+                <input type="text" class="inputValue" placeholder="Enter a book to search">
+                <input type="submit" value="Submit" class="button">
+
+              </section>
+
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <h1 class="title">Book vs Movie</h1>
+        <h2 class="subtitle">Compare the <strong>Book</strong> versus the <strong>Movie</strong>!</h2>
+      </div>
+    </section>
+  </header>
+
+  <style>
+    body {
+      background-image: url(https://images.unsplash.com/photo-1571824170220-1f6de1f5e300?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-blend-mode: exclusion
+    }
+    </style>
+
+  <div class="tile is-ancestor">
+    <div class="tile is-vertical is-12">
+      <div class="tile">
+        <div class="tile is-parent is-vertical">
+          <article class="tile is-child notification is-primary is-bold">
+            <p class="title"><u>Movie Result #1</u></p>
+            <p class="subtitle">Director</p>
+            <p class="subtitle">Copyright</p>
+            <p class="subtitle">Rating</p>
+            <div class="content">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque libero, perspiciatis magni maiores
+                officiis molestias unde earum ipsum aliquam! Velit dolorum unde neque ut delectus tempora nesciunt sunt
+                dolor qui.</p>
+            </div>
+
+            <!-- Movie Poster -->
+            <!-- <figure class="image is-1by1">
+              <img src="https://bulma.io/images/placeholders/480x480.png">
+            </figure> -->
+          </article>
+
+          <article class="tile is-child notification is-danger is-bold is-light">
+            <p class="title"><u>Movie Result #2</u></p>
+            <p class="subtitle">Director</p>
+            <p class="subtitle">Copyright</p>
+            <p class="subtitle">Rating</p>
+            <div class="content">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores nesciunt at in illo, illum
+                praesentium tempora sequi ipsam sit corporis? Eum hic corrupti ex blanditiis libero, iusto esse expedita
+                molestiae!</p>
+            </div>
+
+            <!-- Movie Poster -->
+            <!-- <figure class="image is-1by1">
+                  <img src="https://bulma.io/images/placeholders/480x480.png">
+                </figure> -->
+
+          </article>
+        </div>
+
+        <div class="tile is-parent">
+          <article class="tile is-child notification is-link is-bold">
+            <p class="title"><u>Book result</u></p>
+            <p class="subtitle">Author</p>
+            <p class="subtitle">Copyright/Publication Date</p>
+            <p class="subtitle">Rating</p>
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa id ab obcaecati ea, possimus vero
+                distinctio ducimus at maxime reprehenderit sequi odit laboriosam quo aperiam pariatur quia voluptatibus
+                qui quae?</p>
+
+            </div>
+
+            <!-- Book Cover -->
+            <figure class="image is-1by1">
+              <img src="https://bulma.io/images/placeholders/480x480.png">
+            </figure>
+          </article>
+        </div>
+      </div>
+
+      <div class="tile is-parent">
+        <article class="tile is-child notification is-danger">
+          <p class="title"><u>Where to buy:</u></p>
+          <p class="subtitle is-link">Option 1</p>
+          <p class="subtitle is-link">Option 2</p>
+          <p class="subtitle is-link">Option 3</p>
+
+          <div class="content">
+            <!-- Content -->
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </div>
+
+  <footer id="footer">
+
+  </footer>
+
 </body>
+
 </html>
