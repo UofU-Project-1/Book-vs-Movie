@@ -2,7 +2,7 @@ console.log("This script is working")
 document.getElementById("search-btn").addEventListener("click", getMovieTitle);
 
 imdbID = ''
-movieRating = ''
+let movieRating = ''
 function getMovieTitle() {
     let search = document.getElementById("search-movie-title").value
     console.log("This is what was searched " + search)
