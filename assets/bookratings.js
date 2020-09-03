@@ -1,0 +1,1 @@
+// when populating fields, on the book-rating element, set an attribute of data-rating with a value equal to the 100-point scale rating of the book (it'll be used in the compare.js file to compare the ratings)
