@@ -7,7 +7,7 @@ function getMovieTitle() {
     let search = document.getElementById("search-movie-title").value
     console.log("This is what was searched " + search)
     let apikey = 'ffe37ecb'
-    let endpoint = 'http://www.omdbapi.com/?apikey='+apikey+'&s='+search
+    let endpoint = 'https://www.omdbapi.com/?apikey='+apikey+'&s='+search
     $.ajax({
         url: endpoint,
         success: "GET" }).then(function(response) {
@@ -15,7 +15,7 @@ function getMovieTitle() {
             document.getElementById("movie-title").textContent= response.Search[0].Title;
             let imdbID = document.getElementById("movie-director").textContent= response.Search[0].imdbID;
             console.log("This is the IMDB ID " + imdbID)
-            let imdbEndpoint = 'http://www.omdbapi.com/?apikey='+apikey+'&i='+imdbID;
+            let imdbEndpoint = 'https://www.omdbapi.com/?apikey='+apikey+'&i='+imdbID;
             searchIMDB(imdbEndpoint)
 
         });
