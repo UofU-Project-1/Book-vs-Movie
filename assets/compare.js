@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
             } else if (mutation.target.getAttribute('id') === 'book-rating') {
                 bRating = parseInt(mutation.target.getAttribute('data-rating'));
             }
-            let compareText = document.getElementById('comp-result');
-            compareText.setAttribute('class', 'subtitle');
+            let compareText = document.getElementById('rating');
+            // compareText.setAttribute('class', 'subtitle');
             compareText.textContent = 'This movie was rated ';
             let difference = Math.abs(mRating - bRating);
             if (mRating > bRating) {
