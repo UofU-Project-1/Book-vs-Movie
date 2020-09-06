@@ -14,16 +14,23 @@ function getBookTitle() {
             document.getElementById('error-modal').setAttribute('class', 'modal is-active');
         } else {
             var topResult = xml.getElementsByTagName('work')[0];
+            console.log(topResult);
             var title = topResult.getElementsByTagName('title')[0].textContent;
             var author = topResult.getElementsByTagName('name')[0].textContent;
             var year = topResult.getElementsByTagName('original_publication_year')[0].textContent;
             var rating = parseInt(topResult.getElementsByTagName('average_rating')[0].textContent);
             rating = rating * 20;
+            var cover = topResult.getElementsByTagName('image_url')[0].textContent;
+            console.log(cover)
+            var altText = "cover for " + title;
             document.getElementById("book-title").textContent = title;
             document.getElementById("book-author").textContent = "Author: " + author;
             document.getElementById("book-year").textContent = "Publication Year: " + year;
             document.getElementById("book-rating").textContent = "Rating: " + rating;
             document.getElementById("book-rating").setAttribute('data-rating', rating);
+            document.getElementById("book-cover").setAttribute("src", cover);
+            document.getElementById("book-cover").setAttribute("alt", altText);
+
         }
     });
 };
