@@ -15,6 +15,23 @@
 </head>
 
 <body id="body" class="img-container">
+  
+  <div id='error-modal' class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Error</p>
+        <button id='close-icon' class="delete" aria-label="close" onclick='closeModal()'></button>
+      </header>
+      <section class="modal-card-body">
+        <!-- display search term here -->
+        <p><span id='searchType'></span> not found, please check spelling and try again.</p>
+      </section>
+      <footer class="modal-card-foot">
+        <button id='close-btn' class="button modal-button" onclick='closeModal()'>Close</button>
+      </footer>
+    </div>
+  </div>
 
   <header>
     <!-- Title Header -->
