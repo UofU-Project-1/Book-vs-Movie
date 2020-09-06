@@ -38,14 +38,15 @@ function searchIMDB(imdbEndpoint) {
         url: imdbEndpoint,
         success: "GET"
     }).then(function (response) {
-        console.log(response)
         document.getElementById("movie-director").textContent = "Director: " + response.Director
         document.getElementById("movie-year").textContent = "Release Date: " + response.Year
         document.getElementById("movie-rating").textContent = "Rating: " + response.imdbRating * 10
         movieRating = response.imdbRating * 10
         document.getElementById("movie-rating").setAttribute('data-rating', movieRating);
-        // let poster = response.
-        // document.getElementById('movie-poster').setAttribute('src', poster);
+        let poster = response.Poster;
+        let altText = "Poster for " + response.Title;
+        document.getElementById('movie-poster').setAttribute('src', poster);
+        document.getElementById('movie-poster').setAttribute('alt', altText);
 
         //document.getElementById("movie-title").textContent= response.Search[0].Title;
         //let imdbID = document.getElementById("movie-director").textContent= response.Search[0].imdbID;
