@@ -1,24 +1,28 @@
 /* CSS Stylesheet */
 
+/* All elements selected */
 * {
     margin: 0;
     /* height: 100%; */
 }
 
+/* Width of body */
 body {
     width: 100%;
 }
 
+/* Background image */
 .img-container {
     background-image: url(../assets/sean-benesh-6Nbo9Pn0yJA-unsplash.jpg);
-    height: 100%;
+    height: 120vh;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    
+
 }
 
+/* Site title & subtitle */
 .inner-container {
     text-align: center;
     /* position: absolute; */
@@ -28,6 +32,7 @@ body {
     margin-top: 900 px;
 }
 
+/* Title */
 h1 {
     font-size: 7em;
     font-family: "Shadows into Light Two", sans-serif;
@@ -37,6 +42,7 @@ h1 {
     text-shadow: lightslategray;
 }
 
+/* Subtitle */
 h2 {
     margin-top: -17px;
     font-family: "Fontdiner Swanky", sans-serif;
@@ -45,77 +51,75 @@ h2 {
     font-weight: 400;
 }
 
-a {
-    margin-top: 20px;
-    font-size: 1.3em;
-    font-family: "Source Sans Pro", sans-serif;
+/* Text alignment for tiles */
+.headline {
+    text-align: center;
 }
 
-
-
-.btn:hover,.btn:active {
-    background-color: #fff;
-    color: #000;
-    transition: background-color 0.3s ease-in, color 0.3s ease-in;
-}
-
+/* Screen size property adjustments */
 @media only screen and (max-width: 920px) {
     .inner-container {
         margin-top: 75px;
     }
 }
 
+/* Screen size property adjustments */
 @media only screen and (max-width: 540px) {
     .inner-container {
         margin-top: 10px;
     }
-
+    
     h1 {
         font-size: 5em;
     }
-
+    
     h2 {
         font-size: 1.4em;
     }
 }
 
+/* Container content justified to center */
 #columns, #rating-container {
     justify-content: center;
 }
 
 
-
+/* Used to match the HTML element before background picture was assigned */
 :root {
     --hue-neutral: 260;
-
 }
 
 .section {
     padding: 0px
 }
 
-
+/* Paragraph color assignment if unable to load Bulma attributes */
 p {
     color: black;
 }
+
 
 .title:not {
     color: yellow;
 }
 
-h1.title,
-.subtitle {
+/* Main title & subtitle color assignment */
+h1.title, .subtitle {
     color: yellow;
 }
 
+/* Subtitle emphasis */
 .subtitle strong {
     color: yellow;
 }
 
+/* Search container space added below */
+#search {
+    margin-bottom: 150px;
+}
 
 /* Search Input */
 input[type="text"] {
-
     height: 40px;
     width: auto;
     background: white;
@@ -141,28 +145,29 @@ input[type="submit"] {
     border: solid;
     border-radius: 50px;
     border-color: rgb(67, 119, 121);
-    
 }
 
+/* Background image assigned to Book Result */
 #book-result {
     background-image: url(../assets/jaredd-craig-HH4WBGNyltc-unsplash.jpg);
     height: 100%;
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 
+/* Background image assigned to Movie Result */
 #movie-result {
     background-image: url(../assets/denise-jans-WevidclYpdc-unsplash.jpg);
-    height: 100%;
-    background-position: top;
+    height: 90%;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-
 }
 
+/* Background image assigned to Comparison rating */
 #comparison-rating {
     background-image: url(../assets/de-andre-bush-eoohqHDVEP0-unsplash.jpg);
     height: 100%;
@@ -170,16 +175,52 @@ input[type="submit"] {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-
 }
 
+/* Textbox background to allow text to be more readable and provide opacity to the textbox to see background image */
+.transbox {
+    margin: 10px;
+    /* Changed background to rgba to allow opacity on the background image and not text as well */
+    background: rgba(233, 221, 218, 0.863);
+    border: 1px solid black;
+    padding: 0 0 0 5;
+    border-radius: 5px;
+    /* Disabled to prevent text from being affected by opacity */
+    /* background-color: #ffffff; */
+    /* opacity: 0.8; */
+    /* font-display: inherit; */
+    /* font-family: "Faster One"; */
+}
+
+/* Chicle font & size applied to Comparison Rating. Added padding to prevent 'p' & 'g' from extending past the margin  */
+#compare {
+    font-family: "Chicle";
+    font-size: 60px;
+    font-style: oblique;
+    padding: 0 0 5px 0;
+}
+
+/* Chicle font & size applied to tiles */
+#rating, #book-result, #movie-result {
+    font-family: "Chicle";
+    font-size: 40px;
+    font-style: oblique;
+}
+
+/* Added border for tile clarity from background image */
+#comparison-rating, #book-result, #movie-result {
+    border: 2px solid rgb(230, 219, 203);
+}
+
+
+/* Disabled CSS  */
 
 /* #header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
     color: yellow;
     justify-content:center;
     align-items: center;
-   
+    
 } */
 
 /* .container {
@@ -200,8 +241,6 @@ input[type="submit"] {
     display: block;
 } */
 
-
-
 /* :root {
     --primary-color-h: 156;
     --primary-color-s: 50%;
@@ -212,18 +251,16 @@ input[type="submit"] {
     --secondary-color: hsl(calc(var(--primary-color-h) + 180), var(--primary-color-s), var( --primary-color-l));
     --lighten: 15%;
     --darken: -15%;
-  } */
-
+} */
 
 /* #body{
     --hue: var(--hue-neutral);
     background-color: hsl(var(--hue), 100%, 25%);
     padding: 0px 0px 0px 0px; 
     margin: px;
-   
- } */
+} */
 
- /* .btn {
+/* .btn {
     display: inline-block;
     width: 200px;
     font-weight: bold;
@@ -234,4 +271,18 @@ input[type="submit"] {
     outline: none;
     text-decoration: none;
     transition: background-color 0.2s ease-out, color 0.2s ease-out;
+} */
+
+/* Disabld button for possible future use */
+/* a {
+    margin-top: 20px;
+    font-size: 1.3em;
+    font-family: "Source Sans Pro", sans-serif;
+} */
+
+/* Disabled button properties */
+/* .btn:hover, .btn:active {
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
 } */

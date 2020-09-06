@@ -9,7 +9,7 @@
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <link rel="stylesheet" href="./assets/styles-2.css">
   <link
-    href="https://fonts.googleapis.com/css2?family=Chicle&family=Faster+One&family=Fontdiner+Swanky&family=Mystery+Quest&family=Shadows+Into+Light+Two&family=Source+Sans+Pro&family=Zilla+Slab+Highlight&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Chicle&family=Faster+One&family=Fontdiner+Swanky&family=Mystery+Quest&family=Open+Sans&family=Shadows+Into+Light+Two&family=Source+Sans+Pro&family=Zilla+Slab+Highlight&display=swap"
     rel="stylesheet">
 </head>
 
@@ -26,55 +26,57 @@
         <!-- Disable button. Possible future use. -->
         <!-- <a class="btn" href="#">Search</a> -->
 
-        <!-- Search entry & button.   -->
+        <!-- Search entry & button -->
         <section id="search" class="has-text-centered">
+          <!-- Search entry -->
           <input id="search-movie-title" type="text" class="inputValue" placeholder="Enter a movie to search">
+          <!-- Search button -->
           <input id="search-btn" type="submit" value="Submit" class="button">
         </section>
       </div>
   </header>
 
-<div id="rating-container" class="tile is-ancestor ">
-<!-- Comparison Rating -->
-  <div class="tile is-parent is-10">
-    <article id="comparison-rating" class="tile is-child notification is-danger is-light">
-      <p class="title"><u>Comparison Rating:</u></p>
-      <p id='comp-result' class="subtitle is-link"></p>
-    </article>
-  </div>
-</div>
 
-  <div id="columns" class="tile is-ancestor">
-      <!-- <div class="tile is-vertical is-12"> -->
-       <!-- <div class="tile"> -->
-       
-        <!-- Book Result -->
-        <div class="tile is-parent is-vertical is-5">
-          <article id="book-result" class="tile is-child notification is-primary is-bold is-light">
-            <p id="book-title" class="title"><u>Book Result #1</u></p>
-            <p id="book-author" class="subtitle">Author</p>
-            <p id="book-year" class="subtitle">Published Year</p>
-            <p id="book-rating" class="subtitle">Rating</p>
-          </article>
-        </div>
-
-
-        <!-- Movie Result -->
-        <div class="tile is-parent is-vertical is-5">
-          <article id="movie-result" class="tile is-child notification is-link is-bold is-light">
-            <p id="movie-title" class="title"><u>Movie result</u></p>
-            <p id="movie-director" class="subtitle">Director</p>
-            <p id="movie-year" class="subtitle">Release Date</p>
-            <p id="movie-rating" class="subtitle">Rating</p>
-          </article>
-        </div>
-
-      </div>
+  <!-- Comparison rating container -->
+  <div id="rating-container" class="tile is-ancestor ">
+    <!-- Comparison Rating -->
+    <div class="tile is-parent is-10">
+      <article id="comparison-rating" class="tile is-child notification is-danger is-light headline">
+        <!-- Comparison rating title -->
+        <p id="compare" class="title transbox "><u>Comparison Rating:</u></p>
+        <!-- Comparison rating subtitle & space to have calculated rating -->
+        <p id="rating" class="subtitle is-link transbox headline">Option 1</p>
+      </article>
     </div>
   </div>
+
+  <!-- Book & Movie result containers -->
+  <div id="columns" class="tile is-ancestor">
+
+    <!-- Book Result -->
+    <div class="tile is-parent is-vertical is-5">
+      <article id="book-result" class="tile is-child notification is-primary is-bold is-light headline">
+        <p id="book-title" class="title transbox "><u>Book Result</u></p>
+        <p id="book-author" class="subtitle transbox">Author</p>
+        <p id="book-year" class="subtitle transbox">Published Year</p>
+        <p id="book-rating" class="subtitle transbox">Rating</p>
+      </article>
+    </div>
+
+
+    <!-- Movie Result -->
+    <div class="tile is-parent is-vertical is-5">
+      <article id="movie-result" class="tile is-child notification is-link is-bold is-light headline">
+        <p id="movie-title" class="title transbox "><u>Movie result</u></p>
+        <p id="movie-director" class="subtitle transbox">Director</p>
+        <p id="movie-year" class="subtitle transbox">Release Date</p>
+        <p id="movie-rating" class="subtitle transbox">Rating</p>
+      </article>
+    </div>
   </div>
 
-  <!-- add js references-->
+
+  <!-- Add js references-->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="./assets/bookratings.js"></script>
   <script src="./assets/movieratings.js"></script>
