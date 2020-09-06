@@ -4,7 +4,7 @@
     function getBookTitle() {
         let search = encodeURI(document.getElementById("search-movie-title").value);
         let apiKey = "eqWNq7n8qMzK8VbeMadoyg";
-        let bookURL = "https://cors-anywhere.herokuapp.com/https://www.goodreads.com/search/index.xml?key=" + apiKey + "&q=" + search;
+        let bookURL = "https://cors-anywhere.herokuapp.com/https://www.goodreads.com/search/index.xml?key=" + apiKey + "&q=" + search + "&p=1";
         $.ajax({
             url: bookURL,
             type: "GET"
