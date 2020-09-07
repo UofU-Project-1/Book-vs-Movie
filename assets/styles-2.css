@@ -9,12 +9,13 @@
 /* Width of body */
 body {
     width: 100%;
+   
 }
 
 /* Background image */
 .img-container {
     background-image: url(../assets/sean-benesh-6Nbo9Pn0yJA-unsplash.jpg);
-    height: 120vh;
+    height: 140vh;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -212,6 +213,11 @@ input[type="submit"] {
     border: 2px solid rgb(230, 219, 203);
 }
 
+/* Set book cover and movie poster to a standard size for both images*/
+#book-cover, #movie-poster {
+    height: 225px;
+    width: 150px;
+}
 
 /* Disabled CSS  */
 
